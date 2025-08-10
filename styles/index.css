@@ -1,0 +1,16 @@
+@import url("./variables/null.css");
+@import url("./variables/colors.css");
+@import url("./variables/fonts.css");
+@import url("./variables/transition.css");
+
+@import url("./sections/header.css");
+@import url("./sections/quote.css");
+@import url("./sections/about-school.css");
+@import url("./sections/activities.css");
+@import url("./sections/review.css");
+@import url("./sections/footer.css");
+
+.content-img {
+    margin-bottom: 150px;
+    width: 100%;
+}

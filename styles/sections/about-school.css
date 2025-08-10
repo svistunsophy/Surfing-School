@@ -1,0 +1,73 @@
+.about-school {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 150px;
+}
+
+.about-school_content {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 280px;
+    max-width: 1721px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.content_left-box {
+    display: grid;
+    gap: 256px;
+    max-width: 560px;
+}
+
+.title-place_subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title-place_title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.title-place_t-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.left-box_text-place {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+}
+
+.text-place_text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content_right-box {
+    position: relative;
+}
+
+.right-box_activities-button {
+    position: absolute;
+    right: 68px;
+    bottom: 46px;
+    color: var(--color-white);
+    background-color: var(--color-white-opacity30);
+    font-size: 32px;
+    font-weight: 700;
+    border: solid 1px var(--color-white);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.right-box_activities-button:hover {
+    transition: 0.5s;
+    color: var(--color-white);
+    background-color: var(--color-nice-blue);
+    border: none;
+}

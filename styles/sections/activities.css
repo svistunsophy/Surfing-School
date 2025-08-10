@@ -1,0 +1,84 @@
+.activities {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.activities_article {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 100px;
+    max-width: 1721px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.content_subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content_info-box {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    padding: 12px 0;
+}
+
+.info-box_title {
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 825px;
+}
+
+.info-box_text-place {
+    display: grid;
+    justify-items: left;
+    grid-template-rows: repeat(2,auto);
+    gap: 36px;
+}
+
+.text-place_book-button {
+    background-color: var(--color-the-end);
+    color: var(--color-white);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.activites_button-place {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.button-place_button {
+    display: grid;
+    background-color: var(--color-white);
+    color: var(--color-the-end);
+    border: solid 1px var(--color-the-end);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    font-size: 26px;
+    font-weight: 700;
+    justify-items: center;
+    align-items: center;
+}
+
+.button-place_button:hover {
+    transition: 0.5s;
+    background-color: var(--color-nice-blue);
+    color: var(--color-white);
+    border: solid 1px var(--color-nice-blue);
+}
+
+.text-place_book-button:hover {
+    transition: 0.5s;
+    background-color: var(--color-white);
+    color: var(--color-the-end);
+    border: solid 1px var(--color-the-end);
+    padding: 10px 30px;
+}
