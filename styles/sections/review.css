@@ -54,3 +54,17 @@
     grid-template-columns: repeat(2,auto);
     gap: 134px;
 }
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .content_title-place {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+
+}
+
+@media screen and (max-width: 480px) { /* Только для мобильных устройств */
+
+}

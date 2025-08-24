@@ -25,12 +25,27 @@
 .content_top {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 800px;
+    gap: 46%;
     align-items: center;
     padding: 50px 0 33px;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 60px;
+}
+
+#burger_icon {
+    display: none; 
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.burger-icon_line {
+    display: none;
+    height: 6px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: var(--color-china-seas);
 }
 
 .navbar_menu {
@@ -61,12 +76,16 @@
 
 .content_adress {
     display: inline-block;
+    width: auto;
+    max-width: 100%;
+    padding: 10px 20px;
     background-color: var(--color-the-end);
     color: var(--color-white);
     border-radius: 30px;
     font-size: 20px;
     font-weight: 700;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .content_middle {
@@ -76,16 +95,15 @@
     gap: 750px;
 }
 
-.tags_t-list {
-    display: grid;
-    grid-template-rows: repeat(3,auto);
-    grid-template-columns: repeat(2,auto);
-    column-gap: 10px;
+.t-list_menu {
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 18px;
+    column-gap: 10px;
     margin-top: 100px;
 }
 
-.t-list_item {
+.tags_t-button {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -102,7 +120,7 @@
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
-    background-color: var(--color-white-opacity80);
+    background-color: var(--color-white-80);
     padding: 50px 20px;
     font-weight: 700;
     color: var(--color-the-end);
@@ -167,18 +185,6 @@
     padding: 10px 20px;
 }
 
-@media (max-width: 1920px) {
-    .header {
-        padding-bottom: 50px;
-    }
-    .content_top {
-        padding-top: 30px;
-    }
-    .middle_info-card {
-        margin-bottom: 80px;
-    }
-}
-
 .item_a:hover {
     transition: 0.5s;
     color: var(--color-the-end);
@@ -194,7 +200,7 @@
     background-color: var(--color-china-seas);
 }
 
-.t-list_item:hover {
+.tags_t-button:hover {
     transition: 0.5s;
     color: var(--color-white);
     background-color: var(--color-china-seas);
@@ -212,4 +218,133 @@
     transition: 0.5s;
     color: var(--color-white);
     background-color: var(--color-china-seas);
+}
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .content_top {
+        gap: 38%;
+    }
+
+    .top_phone-number {
+        max-width: 230px;
+    }
+
+    .content_middle {
+        justify-content: center;
+        grid-template-columns: auto;
+        gap: 200px;
+    }
+
+    .info-card_text-box {
+        justify-items: center;
+    }
+
+    .text-box_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content_bottom {
+        justify-items: center;
+        grid-template-columns: auto;
+        gap: 50px;
+        grid-template-areas:
+        'buttons'
+        'contacts';
+    }
+
+    .contacts_list {
+       grid-area: contacts;
+    }
+
+    .bottom_button-place {
+        grid-area: buttons;
+    }
+}
+
+@media screen and (max-width: 1470px) { /*Верхнее меню*/
+    .content_top {
+        gap: 28%;
+    }
+}
+
+@media screen and (max-width: 1050px) { /*Верхнее меню*/
+    .content_top {
+        gap: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+    .header {
+        margin-bottom: 100px;
+    }
+    .content_top {
+        gap: 55%;
+        margin-bottom: 60px;
+    }
+
+    #burger-icon {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 5px;
+    }
+
+    .burger-icon_line {
+        display: block;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-white);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .top_phone-number {
+        max-width: 200px;
+        padding: 10px 16px;
+    }
+
+    .content_adress {
+        font-size: 18px; 
+        padding: 10px 16px; 
+    }
+
+    .content_middle {
+        gap: 100px;
+    }
+
+    .t-list_menu {
+        row-gap: 20px;
+    }
+
+    .tags_t-button {
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+
+    .bottom_button-place {
+        font-size: 25px;
+    }
+
+    .button-place_book-button {
+        padding: 10px 16px;
+    }
+
+    .button-place_activities-button {
+        padding: 10px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Только для мобильных устройств */
+    .content_top {
+        gap: 100px;
+    }
 }

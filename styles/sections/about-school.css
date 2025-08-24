@@ -31,7 +31,7 @@
     margin-bottom: 100px;
 }
 
-.title-place_t-list {
+.title-place_menu {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -53,11 +53,14 @@
 }
 
 .right-box_activities-button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
     position: absolute;
     right: 68px;
     bottom: 46px;
     color: var(--color-white);
-    background-color: var(--color-white-opacity30);
+    background-color: var(--color-white-30);
     font-size: 32px;
     font-weight: 700;
     border: solid 1px var(--color-white);
@@ -69,5 +72,83 @@
     transition: 0.5s;
     color: var(--color-white);
     background-color: var(--color-nice-blue);
+    border: solid 1px var(--color-nice-blue);
     border: none;
+}
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .about-school_content {
+        gap: 180px;
+    }
+
+    .content_left-box {
+        gap: 186px;
+    }
+
+    .title-place_title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 1525px) { 
+    .about-school_content {
+        gap: 100px;
+    }
+
+    .content_left-box {
+        gap: 120px;
+    }
+}
+
+@media screen and (max-width: 1438px) { /* Версия с одной колонкой */
+    .about-school_content {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+    
+    .left-box_text-place {
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 880px) { /* Изменение картинки */
+    .content_right-box {
+        max-width: 80%;
+    }
+
+    .right-box_img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+    .title-place_title {
+        font-size: 45px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Только для мобильных устройств */
+    .about-school {
+        margin-bottom: 100px;
+    }
+
+    .text-place_text {
+        font-size: 14px;
+    }
+
+    .content_right-box {
+        display: grid;
+        justify-items: center;
+    }
+
+    .right-box_activities-button {
+        position: static;
+        margin-top: 30px;
+        font-size: 25px;
+        padding: 10px 16px;
+        color: var(--color-nice-blue);
+        border: solid 1px var(--color-nice-blue);
+    }
 }

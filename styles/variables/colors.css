@@ -3,6 +3,6 @@
   --color-china-seas: #0a507a; /*blue*/
   --color-the-end: #2b2a29; /*black*/
   --color-white: #ffffff; /*white*/
-  --color-white-opacity80: rgba(255,255,255,0.8); /*Background info card with opacity 80%*/
-  --color-white-opacity30: rgba(255,255,255,0.3); /*Background activities button with opacity 30%*/
+  --color-white-80: rgba(255,255,255,0.8); /*Background info card with opacity 80%*/
+  --color-white-30: rgba(255,255,255,0.3); /*Background activities button with opacity 30%*/
 }

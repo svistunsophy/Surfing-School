@@ -18,6 +18,11 @@
         <div class="header_content">
             <div class="content_top">
                 <nav class="top_navbar">
+                    <div id="burger-icon" onclick="toggleMenu()">
+                        <hr class="burger-icon_line"></р>
+                        <hr class="burger-icon_line"></hr>
+                        <hr class="burger-icon_line"></hr>
+                    </div>
                     <ul class="navbar_menu">
                         <li class="menu_item"><a class="item_a" href="#">home</a></li>
                         <li class="menu_item"><a class="item_a" href="#">activites</a></li>
@@ -34,16 +39,16 @@
             </div>
             <img class="content_title-img" src="./public/image/header/title.png" alt="Surging School">
             <h1 class="content_title visually-hidden">Surfing School</h1>
-            <p class="content_adress">Vilamoura. Portugal</p>
+            <a class="content_adress">Vilamoura. Portugal</a>
             <div class="content_middle">
-                <div class="middle_tags">
-                    <ul class="tags_t-list">
-                        <li class="t-list_item">Privat lessons</li>
-                        <li class="t-list_item">Group lessons</li>
-                        <li class="t-list_item">Surf &sup rentals</li>
-                        <li class="t-list_item">Stand up puddle</li>
-                        <li class="t-list_item">Surf trips</li>
-                    </ul>
+                <div class="middle_t-list">
+                    <menu class="t-list_menu">
+                        <li class="menu_tags"><button class="tags_t-button">Privat lessons</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">Group lessons</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">Surf &sup rentals</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">Stand up puddle</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">Surf trips</button></li>
+                    </menu>
                 </div>
                  <div class="middle_info-card">
                     <div class="info-card_text-box">
@@ -57,10 +62,10 @@
             <div class="content_bottom">
                 <div class="bottom_contacts">
                     <ul class="contacts_list">
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/facebook.png" alt="Facebook"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/instagram.png" alt="Instagram"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/youtube.png" alt="Youtube"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/whats-app.png" alt="WhatsApp"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/facebook.svg" alt="Facebook"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/instagram.svg" alt="Instagram"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/youtube.svg" alt="Youtube"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/header/whats-app.svg" alt="WhatsApp"></a></li>
                     </ul>
                 </div>
                  <div class="bottom_button-place">
@@ -81,11 +86,11 @@
                 <div class="left-box_title-place">
                     <p class="title-place_subtitle">Who we are</p>
                     <h2 class="title-place_title">VILAMOURA SURF SCHOOL</h2>
-                    <ul class="title-place_t-list">
-                        <li class="t-list_item">Algarve</li>
-                        <li class="t-list_item">South coast</li>
-                        <li class="t-list_item">Perfect waves for your experience</li>
-                    </ul>
+                    <menu class="title-place_menu">
+                        <li class="menu_tags"><button class="tags_t-button">Algarve</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">South coast</button></li>
+                        <li class="menu_tags"><button class="tags_t-button">Perfect waves for your experience</button></li>
+                    </menu>
                 </div>
                 <div class="left-box_text-place">
                     <p class="text-place_text">Was founded in 2006, being the FIRST SURF SCHOOL OF VILAMOURA BEACH, ALGARVE. Our school is certified by the Portuguese Surfing Federation and by Turismo de Portugal. The School aims to teach the art of surfing the waves in a safe, correct and relaxed way, always under the close and attentive supervision of teachers. Thousands of people have already learned from us to slide on the wave wall on top of a board.</p>
@@ -94,7 +99,7 @@
                 </div>
             </div>
             <div class="content_right-box">
-                <img class="right-box_img" src="./public/image/about-school/surfing-man.png" alt="Surfing man on the wave"> 
+                <img class="right-box_img" src="./public/image/about-school/surfing-man.jpg" alt="Surfing man on the wave"> 
                 <button class="right-box_activities-button">ACTIVITIES</button>
             </div>
         </div>
@@ -112,16 +117,16 @@
                     </div>
                 </div>
             </div>
-            <div class="activites_button-place">
-                <button class="button-place_button">Privat lessons</button>
-                <button class="button-place_button">Group lessons</button>
-                <button class="button-place_button">Surf &sup rentals</button>
-                <button class="button-place_button">Stand up puddle</button>
-                <button class="button-place_button">Surf trips</button>
-            </div>
+            <menu class="activites_menu">
+                <li class="menu_button-place"><button class="button-place_button">Privat lessons</button></li>
+                <li class="menu_button-place"><button class="button-place_button">Group lessons</button></li>
+                <li class="menu_button-place"><button class="button-place_button">Surf &sup rentals</button></li>
+                <li class="menu_button-place"><button class="button-place_button">Stand up puddle</button></li>
+                <li class="menu_button-place"><button class="button-place_button">Surf trips</button></li>
+            </menu>
         </div>
     </section>
-    <img class="content-img" src="./public/image/activities/surfer-action-wave.png" alt="Surfing man on the wave">
+    <img class="content-img" src="./public/image/activities/surfer-action-wave.jpg" alt="Surfing man on the wave">
     <section class="review">
         <div class="review_content">
             <div class="content_title-place">
@@ -170,7 +175,7 @@
     </section>
     <footer class="footer">
         <div class="footer_content">
-            <div class="content_info-box">
+            <div class="content_f-info-box">
                 <div class="info-box_items">
                     <h2 class="items_title">VILAMOURA SURF SCHOOL</h2>
                     <div class="items_list-place">
@@ -195,10 +200,10 @@
             </div>
             <div class="content_contacts-data">
                 <ul class="contacts-data_social-net-list">
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/facebook.png" alt="Facebook"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/instagram.png" alt="Instagram"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/youtube.png" alt="Youtube"></a></li>
-                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/whats-app.png" alt="WhatsApp"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/facebook.svg" alt="Facebook"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/instagram.svg" alt="Instagram"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/youtube.svg" alt="Youtube"></a></li>
+                        <li class="list_item"><a class="l-item_a" href="#"><img class="a_img" src="./public/image/footer/whats-app.svg" alt="WhatsApp"></a></li>
                 </ul>
                 <ul class="contacts-data_doc-list">
                         <li class="a-list_item"><a class="l-item_a" href="#">Terms and conditions</a></li>

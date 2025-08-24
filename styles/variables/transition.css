@@ -1,6 +1,6 @@
 :root {
-  --short-delay: 0.1s;
-  --medium-delay: 0.3s;
-  --long-delay: 0.5s;
-  --ultra-long: 1s;
+  --transition-short-delay: 0.1s;
+  --transition-medium-delay: 0.3s;
+  --transition-long-delay: 0.5s;
+  --transition-ultra-long: 1s;
 }

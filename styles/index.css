@@ -14,3 +14,10 @@
     margin-bottom: 150px;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) { /* Только для мобильных устройств */
+    .content-img {
+        min-height: 250px;
+        margin-bottom: 100px;
+    }
+}

@@ -49,13 +49,14 @@
     font-weight: 700;
 }
 
-.activites_button-place {
+.activites_menu {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(5,1fr);
 }
 
 .button-place_button {
+    width: 100%; 
     display: grid;
     background-color: var(--color-white);
     color: var(--color-the-end);
@@ -81,4 +82,41 @@
     color: var(--color-the-end);
     border: solid 1px var(--color-the-end);
     padding: 10px 30px;
+}
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .activities_article {
+        row-gap: 50px;
+    }
+
+    .info-box_title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+    .content_info-box {
+        align-items: normal;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+    .info-box_title {
+        font-size: 45px;
+    }
+
+    .button-place_button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Только для мобильных устройств */
+    .text-place_book-button {
+        font-size: 25px;
+        padding: 10px 16px;
+    }
+
+    .button-place_button {
+        font-size: 14px;
+    }
 }

@@ -11,3 +11,19 @@
     font-weight: 700;
     max-width: 1180px;
 }
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .quote_text {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+    .quote {
+        margin: 0 auto 100px;
+    }
+
+    .quote_text {
+        font-size: 45px;
+    }
+}

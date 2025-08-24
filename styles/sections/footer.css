@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 
-.content_info-box {
+.content_f-info-box {
     display: grid;
     grid-template-columns: repeat(2,auto);
     align-items: start;
@@ -73,4 +73,49 @@
     gap: 40px;
     font-size: 16px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1714px) { /* Для ноутбука */
+    .content_contacts-data {
+        display: grid;
+        grid-template-columns: 350px;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) { /* Для планшетов и смартфонов */
+    .content_f-info-box {
+        grid-template-columns: auto;
+        margin: 50px 0;
+    }
+
+    .items_title {
+        font-size: 55px;
+    }
+
+    .info-box_logo {
+        display: none;
+    }
+
+    .contacts-data_doc-list {
+        grid-template-columns: auto;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .definition {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Только для мобильных устройств */
+    .items_title {
+        font-size: 45px;
+    }
+
+    .list-place-list {
+        gap: 5px;
+    }
 }
